@@ -15,7 +15,7 @@ public class logotip extends Activity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent mainIntent = new Intent(logotip.this, MainActivity.class);
+                Intent mainIntent = new Intent(logotip.this, InstitutsActivity.class);
                 logotip.this.startActivity(mainIntent);
                 logotip.this.finish();
             }

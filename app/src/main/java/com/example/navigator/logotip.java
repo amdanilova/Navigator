@@ -8,7 +8,7 @@ import android.os.Handler;
 import com.example.navigator.adapter.InstituteAdapter;
 
 public class logotip extends Activity {
-    private final int SPLASH_DISPLEY_LENGHT=5000;
+    private final int SPLASH_DISPLEY_LENGHT=3000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,8 +17,8 @@ public class logotip extends Activity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent mainIntent = new Intent(logotip.this, InstituteAdapter.class);
-                logotip.this.startActivity(mainIntent);
+                Intent intent = new Intent(logotip.this,FacultyActivity.class);
+                logotip.this.startActivity(intent);
                 logotip.this.finish();
             }
         },SPLASH_DISPLEY_LENGHT);

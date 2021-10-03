@@ -1,6 +1,9 @@
 package com.example.navigator.adapter;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.navigator.Institutes;
 import com.example.navigator.R;
+import com.example.navigator.logotip;
 
 import java.util.List;
 
@@ -53,4 +57,6 @@ public class InstituteAdapter extends RecyclerView.Adapter<InstituteAdapter.Inst
             super(itemView);
         }
     }
-}
+
+    }
+
